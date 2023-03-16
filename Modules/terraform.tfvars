@@ -1,4 +1,4 @@
-bucket = "test-bucket"
+bucket = "s1sharma1-bucket"
 
 tags = {
   "name" = "shivani"
