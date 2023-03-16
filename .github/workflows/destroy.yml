@@ -27,10 +27,10 @@ jobs:
   
         - name: terraform init
           run: |
-            cd module
+            cd Modules
             terraform init -reconfigure -backend-config="bucket=${{ env.BUCKET }}" -backend-config="key=${{ env.TFSTATE_FILE }}" -backend-config="region=${{ env.aws_region }}"
             
         - name: destroy
           run: |
-            cd module
+            cd Modules
             terraform destroy -auto-approve
